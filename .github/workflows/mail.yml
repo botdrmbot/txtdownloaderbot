@@ -13,7 +13,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}} # Go to settings -> Secrets -> Actions and crete a New repository secret named HEROKU_API_KEY and as the value enter your heroku api key (You can obtain it from heroku settings)
-          heroku_app_name: "bla-blar" #Your heroku app name
-          heroku_email: "myemail@gmail.com" #Your heroku app name
+          heroku_app_name: "btxtdownloat" #Your heroku app name
+          heroku_email: "botdrmbot@gmail.com" #Your heroku app name
           branch: "main" #Your github branch name
           docker_heroku_process_type: "worker"
