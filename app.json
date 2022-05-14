@@ -1,0 +1,54 @@
+{
+  "name": "Text Link Downloader Bot",
+  "description": "This is a telegram bot to download mega.nz links.",
+  "keywords": [
+    "telegram",
+    "mega.nz",
+    "downloader",
+    "open",
+    "source",
+    "mega",
+    "pyrogram",
+    "bot",
+    "uploader"
+  ],
+  "success_url": "https://t.me/txt_downloader_robot",
+  "website": "https://github.com/AdrienAppCap/text-downloader",
+  "logo": "https://telegra.ph/file/a438489c44d17d108f7b5.jpg",
+  "repository": "https://github.com/AdrienAppCap/text-downloader",
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Make a bot from https://t.me/BotFather and enter the token here",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "GROUPS": {
+      "description": "Telegram User group ids",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once! In heroku separate the ids by space. (don't put commas. Only separate each of the id's with space",
+      "value": "",
+      "required": false
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

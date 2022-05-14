@@ -1,0 +1,9 @@
+pyrogram
+tgcrypto
+requests
+pyromod
+git+https://github.com/XMYSTERlOUSX/yt-dlp
+aiohttp
+aiofiles
+asyncio
+humanize
